@@ -12,8 +12,7 @@ Here's an example workflow file:
 ```yaml
 name: status-check-labeling
 on:
-  pull_request:
-    types: [labeled, unlabeled, opened, synchronize]
+  status
 jobs:
   status-check-labeling:
     name: status-check-labeling
