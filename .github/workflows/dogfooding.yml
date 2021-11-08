@@ -1,6 +1,6 @@
 name: dogfooding
 on:
-  - status
+  status
 jobs:
   dogfood:
     name: dogfooding
