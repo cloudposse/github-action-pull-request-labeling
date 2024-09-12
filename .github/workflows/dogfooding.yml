@@ -1,13 +1,16 @@
 name: dogfooding
 on:
-  status
+  check_suite:
+    types: [completed]
+  status:
+  workflow_dispatch:
 jobs:
   dogfood:
     name: dogfooding
     runs-on: ubuntu-latest
     steps:
       - name: status-check-summaries
-        uses: cloudposse/github-action-status-check-labeling@master
+        uses: cloudposse/github-action-pull-request-labeling@master
         with:
           label: "no-plan-changes"
           name-contains: "spacelift"
