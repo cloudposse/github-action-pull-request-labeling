@@ -81,4 +81,4 @@ done
 # Now that we've determined the desired value of LABEL_NEEDED, let's export it for use in labeling the pull request.
 echo "Label needed: $LABEL_NEEDED"
 echo ""
-echo "::set-output name=label_needed::${LABEL_NEEDED}"
+echo "label_needed=${LABEL_NEEDED}" >> $GITHUB_OUTPUT
