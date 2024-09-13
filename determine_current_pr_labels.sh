@@ -33,4 +33,4 @@ fi
 # Now that we've determined whether the PR is already labeled, let's export that information
 echo "Label present: $LABEL_PRESENT"
 echo ""
-echo "::set-output name=label_present::${LABEL_PRESENT}"
+echo "label_present=${LABEL_PRESENT}" >> $GITHUB_OUTPUT
